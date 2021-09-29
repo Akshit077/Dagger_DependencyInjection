@@ -1,11 +1,13 @@
 package com.example.daggertutorial;
 
-import javax.inject.Inject;
 
 public class Engine {
 
-    @Inject
-    public Engine(){
+    private Motor motor;
+    private IgnitionPump pump;
 
+    public Engine(Motor motor,IgnitionPump pump){
+        this.motor=motor;
+        this.pump=pump;
     }
 }
